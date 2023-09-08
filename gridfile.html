@@ -1,0 +1,573 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>YouTube clone Model</title>
+        <style>
+            .left-section{
+                justify-content:center;
+                align-items: center;
+            }
+            .hamburger{
+                width: 40px;
+                height: 40px;
+                margin: 10px;
+            }
+            .youtube-icon{
+                width: 90px;
+                height: 20px;
+                margin-left: 30px;
+                margin-bottom: 20px;
+            }
+            .bodyy{
+                margin: 0;
+            }
+            .header{
+                height: 65px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .middle-section{
+                background-color: aquamarine;
+                max-width:500px;
+                width: 650px;
+            }
+            .right-section{
+                background-color: pink;
+                width:300px; 
+            }
+            .search-engine{
+                width: 300px;
+                height: 30px;
+            }
+           
+            .prime-div{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                row-gap: 50px;
+            }
+            .head-box{
+                display: grid;
+                grid-template-columns: 40px 330px;
+            }
+            
+            .channel-profile{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                margin-top: 15px;
+              
+            }
+            .thumbnail-one{
+                width: 350px;
+                height: 200px;
+            }
+
+            .sundhar-pichai{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .youtuber{
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+            }
+            .views{
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+            }
+            .sundhar-pichai{
+                font-size: 16px;
+                color: rgb(0, 0, 0);
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-left: 10px;
+                
+            }
+            .youtuber,
+            .views{
+                margin-left: 10px;
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+            }
+            .head-box2{
+                display: grid;
+                grid-template-columns: 40px 330px;
+            }
+
+            .thumbnail-two{
+                width: 350px;
+                height: 200px;
+            }
+            .channel-profile-two{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                margin-top: 15px;
+            }
+            .laugh{
+                font-size: 16px;
+                color: rgb(0, 0, 0);
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-left: 10px;
+                
+            }
+            .youtuber-two{
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+                margin-left: 12px;
+            }
+            .views-two{   
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+                margin-left: 12px;
+            }
+            .thumbnail-three{
+                width: 350px;
+                height: 200px;
+            }
+            .channel-profile-three{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                margin-top: 15px;
+            }
+            .tiktokers{
+                width: 300px;
+                font-size: 16px;
+                color: rgb(0, 0, 0);
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-left: 10px;
+                
+            }
+            .youtuber-three{
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+                margin-left: 12px;
+            }
+            .views-three{   
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+                margin-left: 12px;
+            }
+            .head-box3{
+                display: grid;
+                grid-template-columns: 40px 330px;
+            }
+            .thumbnail-four{
+                width: 350px;
+                height: 200px;
+            }
+            .channel-profile-four{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                margin-top: 15px;
+            }
+            .head-box4{
+                display: grid;
+                grid-template-columns: 40px 330px;
+            }
+            .math{
+                width: 300px;
+                font-size: 16px;
+                color: rgb(0, 0, 0);
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-left: 10px;
+                
+            }
+            .youtuber-four{
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+                margin-left: 12px;
+            }
+            .views-four{   
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+                margin-left: 12px;
+            }
+            .thumbnail-five{
+                width: 350px;
+                height: 200px;
+            }
+            .channel-profile-five{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                margin-top: 15px;
+            }
+            .head-box5{
+                display: grid;
+                grid-template-columns: 40px 330px;
+            }
+            .algorithm{
+                width: 300px;
+                font-size: 16px;
+                color: rgb(0, 0, 0);
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-left: 10px;
+                
+            }
+            .youtuber-five{
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+                margin-left: 12px;
+            }
+            .views-five{   
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+                margin-left: 12px;
+            }
+            .thumbnail-six{
+                width: 350px;
+                height: 200px;
+            }
+            .channel-profile-six{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                margin-top: 15px;
+            }
+            .head-box6{
+                display: grid;
+                grid-template-columns: 40px 330px;
+            }
+            .challenge{
+                width: 300px;
+                font-size: 16px;
+                color: rgb(0, 0, 0);
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-left: 10px;
+                
+            }
+            .youtuber-six{
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+                margin-left: 12px;
+            }
+            .views-six{   
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+                margin-left: 12px;
+            }
+            .thumbnail-seven{
+                width: 350px;
+                height: 200px;
+            }
+            .channel-profile-seven{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                margin-top: 15px;
+            }
+            .head-box7{
+                display: grid;
+                grid-template-columns: 40px 330px;
+            }
+            .flight{
+                width: 300px;
+                font-size: 16px;
+                color: rgb(0, 0, 0);
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-left: 10px;
+                
+            }
+            .youtuber-seven{
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+                margin-left: 12px;
+            }
+            .views-seven{   
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+                margin-left: 12px;
+            }
+            .thumbnail-eight{
+                width: 350px;
+                height: 200px;
+            }
+            .channel-profile-eight{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                margin-top: 15px;
+            }
+            .head-box8{
+                display: grid;
+                grid-template-columns: 40px 330px;
+            }
+            .strenth{
+                width: 300px;
+                font-size: 16px;
+                color: rgb(0, 0, 0);
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-left: 10px;
+                
+            }
+            .youtuber-eight{
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+                margin-left: 12px;
+            }
+            .views-eight{   
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+                margin-left: 12px;
+            }
+            .thumbnail-nine{
+                width: 350px;
+                height: 200px;
+            }
+            .channel-profile-nine{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                margin-top: 15px;
+            }
+            .head-box9{
+                display: grid;
+                grid-template-columns: 40px 330px;
+            }
+            .strenth{
+                width: 300px;
+                font-size: 16px;
+                color: rgb(0, 0, 0);
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-left: 10px;
+                
+            }
+            .youtuber-eight{
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+                margin-left: 12px;
+            }
+            .views-eight{   
+                font-size: 14px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: gray;
+                margin-left: 12px;
+            }
+            .head-box10{
+                display: grid;
+                grid-template-columns: 40px 330px;
+            }
+            .head-box11{
+                display: grid;
+                grid-template-columns: 40px 330px;
+            }
+            .head-box12{
+                display: grid;
+                grid-template-columns: 40px 330px;
+            }
+        </style>
+    </head>
+    <body class="bodyy">
+        <div class="header">
+            <div class="left-section">
+                <img class="hamburger" src="C:\Users\vrama\Downloads\hamburger-menu.svg">
+                <img class="youtube-icon" src="C:\Users\vrama\Downloads\youtube-logo.svg">
+            </div>
+            <div class="middle-section"><input class="search-engine" type="text" placeholder="search"></div>
+            <div class="right-section">right section</div>
+        </div>
+        <div class="prime-div">
+            <div class="chief-div">
+                <div>
+                    <img class="thumbnail-one" src="C:\Users\vrama\OneDrive\Desktop\HTML - CSS - COURSE\THUMBNAILS\thumbnail-1.webp">
+                </div>
+                    <div class="head-box">
+                        <div class="common-grid-one">
+                            <img class="channel-profile" src="C:\Users\vrama\Downloads\channel icon1.jpeg">
+                        </div>
+                        <div class="common-grid-two">
+                            <p class="sundhar-pichai">Talking Tech and AI with Google CEO Sundhar Pichai</p>
+                            <p class="youtuber">Marques Browniee</p>
+                            <p class="views">3.4 million views . 6 months ago</p>
+                        </div>  
+                    </div>
+            </div>
+           
+            <div class="chief-div2">
+                <div>
+                    <img class="thumbnail-two" src="C:\Users\vrama\OneDrive\Desktop\HTML - CSS - COURSE\THUMBNAILS\thumbnail-2.webp">
+                </div>
+                    <div class="head-box2">
+                        <div class="common-grid-three">
+                            <img class="channel-profile-two" src="C:\Users\vrama\Downloads\channel icon 2.jpeg">
+                        </div>
+                        <div class="common-grid-four">
+                            <p class="laugh">Try not to laugh challenge #9</p>
+                            <p class="youtuber-two">markiepiler</p>
+                            <p class="views-two">19 million views . 4 years ago</p>
+                        </div>  
+                    </div>
+                </div>
+                <div class="chief-div3">
+                    <div>
+                        <img class="thumbnail-three" src="C:\Users\vrama\OneDrive\Desktop\HTML - CSS - COURSE\THUMBNAILS\thumbnail-3.webp">
+                    </div>
+                        <div class="head-box3">
+                            <div class="common-grid-five">
+                                <img class="channel-profile-three" src="C:\Users\vrama\Downloads\channel-profile3.jpeg">
+                            </div>
+                            <div class="common-grid-six">
+                                <p class="tiktokers">crazy TIKTOKERS taken moment before disaster</p>
+                                <p class="youtuber-three">SSSiperWolf</p>
+                                <p class="views-three">12 million views . 1 years ago</p>
+                            </div>  
+                        </div>
+                </div>
+                <div class="chief-div4">
+                    <div>
+                        <img class="thumbnail-four" src="C:\Users\vrama\OneDrive\Desktop\HTML - CSS - COURSE\THUMBNAILS\thumbnail-4.webp">
+                    </div>
+                        <div class="head-box4">
+                            <div class="common-grid-seven">
+                                <img class="channel-profile-four" src="C:\Users\vrama\Downloads\channel profile4.jpeg">
+                            </div>
+                            <div class="common-grid-eight">
+                                <p class="math">The simplest math problem solve - collarZ</p>
+                                <p class="youtuber-four">Veritasium</p>
+                                <p class="views-four">18 million views . 4 months ago</p>
+                            </div>  
+                        </div>
+                </div>
+                <div class="chief-div5">
+                    <div>
+                        <img class="thumbnail-five" src="C:\Users\vrama\Downloads\thumbnail5.webp">
+                    </div>
+                        <div class="head-box5">
+                            <div class="common-grid-nine">
+                                <img class="channel-profile-five" src="C:\Users\vrama\Downloads\channel profile 5.jpeg">
+                            </div>
+                            <div class="common-grid-ten">
+                                <p class="algorithm">Kadane's Algorithm to maximum sum subarray...</p>
+                                <p class="youtuber-five">CS Dojo</p>
+                                <p class="views-five">519K views . 5 years ago</p>
+                            </div>  
+                        </div>
+                </div>
+                <div class="chief-div6">
+                    <div>
+                        <img class="thumbnail-six" src="C:\Users\vrama\Downloads\thumbnail-6.webp">
+                    </div>
+                        <div class="head-box6">
+                            <div class="common-grid-eleven">
+                                <img class="channel-profile-six" src="C:\Users\vrama\Downloads\channel-profile 6.jpeg">
+                            </div>
+                            <div class="common-grid-twelve">
+                                <p class="challenge">Anything you fit in the circle i'll pay for u</p>
+                                <p class="youtuber-six">MrBeast</p>
+                                <p class="views-six">141 million views . 1 year ago</p>
+                            </div>  
+                        </div>
+                </div>
+                <div class="chief-div7">
+                    <div>
+                        <img class="thumbnail-seven" src="C:\Users\vrama\Downloads\thumbnail-7.webp">
+                    </div>
+                        <div class="head-box7">
+                            <div class="common-grid-thirteen">
+                                <img class="channel-profile-seven" src="C:\Users\vrama\Downloads\channel-profile7.jpeg">
+                            </div>
+                            <div class="common-grid-fourteen">
+                                <p class="flight">why flights fly iver Tibet</p>
+                                <p class="youtuber-seven">RealLifeLore</p>
+                                <p class="views-seven">6.6 million views . 1 year ago</p>
+                            </div>  
+                        </div>
+                </div>
+                <div class="chief-div8">
+                    <div>
+                        <img class="thumbnail-eight" src="C:\Users\vrama\Downloads\thumbnail-8.webp">
+                    </div>
+                        <div class="head-box8">
+                            <div class="common-grid-seventeen">
+                                <img class="channel-profile-eight" src="C:\Users\vrama\Downloads\channel-profile8.jpeg">
+                            </div>
+                            <div class="common-grid-eighteen">
+                                <p class="strenth">The SECRET of Super HUMAN strenth</p>
+                                <p class="youtuber-seven">ThenX</p>
+                                <p class="views-seven">20 million views . 3 year ago</p>
+                            </div>  
+                        </div>
+                </div>
+                <div class="chief-div9">
+                    <div>
+                        <img class="thumbnail-nine" src="C:\Users\vrama\Downloads\thumbnail 9.webp">
+                    </div>
+                        <div class="head-box9">
+                            <div class="common-grid-nineteen">
+                                <img class="channel-profile-nine" src="C:\Users\vrama\Downloads\channel profile 9.jpeg">
+                            </div>
+                            <div class="common-grid-twenty">
+                                <p class="strenth">inside the worlds biggest pasenger plane</p>
+                                <p class="youtuber-seven">Techvision</p>
+                                <p class="views-seven">3.7 million views . 10 months ago</p>
+                            </div>  
+                        </div>
+                </div>
+                <div class="chief-div9">
+                    <div>
+                        <img class="thumbnail-nine" src="C:\Users\vrama\Downloads\thumbnail 10.webp">
+                    </div>
+                        <div class="head-box10">
+                            <div class="common-grid-nineteen">
+                                <img class="channel-profile-nine" src="C:\Users\vrama\Downloads\channel profile 10.jpeg">
+                            </div>
+                            <div class="common-grid-twenty">
+                                <p class="strenth">how the worlds largest cruise ship makes 30,000</p>
+                                <p class="youtuber-seven">Business insider</p>
+                                <p class="views-seven">14 million views . 1 year ago</p>
+                            </div>  
+                        </div>
+                </div>
+                <div class="chief-div9">
+                    <div>
+                        <img class="thumbnail-nine" src="C:\Users\vrama\Downloads\thumbnail-11.webp">
+                    </div>
+                        <div class="head-box11">
+                            <div class="common-grid-nineteen">
+                                <img class="channel-profile-nine" src="C:\Users\vrama\Downloads\channel profile 11.jpeg">
+                            </div>
+                            <div class="common-grid-twenty">
+                                <p class="strenth">Dubai's craziest underwater train and other things #only</p>
+                                <p class="youtuber-seven">Destination Tips</p>
+                                <p class="views-seven">3 million views . 1 year ago</p>
+                            </div>  
+                        </div>
+                </div>
+                <div class="chief-div9">
+                    <div>
+                        <img class="thumbnail-nine" src="C:\Users\vrama\Downloads\thumbnail-12.webp">
+                    </div>
+                        <div class="head-box12">
+                            <div class="common-grid-nineteen">
+                                <img class="channel-profile-nine" src="C:\Users\vrama\Downloads\channel thumbnail 12.webp">
+                            </div>
+                            <div class="common-grid-twenty">
+                                <p class="strenth">what would happen if u didn't dirink water - Mia</p>
+                                <p class="youtuber-seven">TED - Ed</p>
+                                <p class="views-seven">12 million views . 5 years ago</p>
+                            </div>  
+                        </div>
+                </div>
+        </div>
+           
+     </body>
+</html>
